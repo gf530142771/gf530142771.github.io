@@ -1,0 +1,800 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Mermaid使用说明 · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="郭峰">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../命令学习/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../AndroidStudio常见问题解决/">
+            
+                <a href="../../AndroidStudio常见问题解决/">
+            
+                    
+                    AndroidStudio常见问题解决
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../AndroidStudio常见问题解决/常见问题.html">
+            
+                <a href="../../AndroidStudio常见问题解决/常见问题.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../CocosCreatorMVC框架结构设计/">
+            
+                <a href="../../CocosCreatorMVC框架结构设计/">
+            
+                    
+                    CocosCreatorMVC框架结构设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../CocosCreatorMVC框架结构设计/1.设计总纲.html">
+            
+                <a href="../../CocosCreatorMVC框架结构设计/1.设计总纲.html">
+            
+                    
+                    1.设计总纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../CocosCreator学习/">
+            
+                <a href="../../CocosCreator学习/">
+            
+                    
+                    CocosCreator学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../CocosCreator学习/1.资源的加载与释放.html">
+            
+                <a href="../../CocosCreator学习/1.资源的加载与释放.html">
+            
+                    
+                    1.资源的加载与释放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../CocosCreator学习/编辑器扩展/">
+            
+                <a href="../../CocosCreator学习/编辑器扩展/">
+            
+                    
+                    编辑器扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../CocosCreator学习/编辑器扩展/1.扩展包的安装与结构.html">
+            
+                <a href="../../CocosCreator学习/编辑器扩展/1.扩展包的安装与结构.html">
+            
+                    
+                    1.扩展包的安装与结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../CocosCreator学习/编辑器扩展/2.扩展包结构与参数解析.html">
+            
+                <a href="../../CocosCreator学习/编辑器扩展/2.扩展包结构与参数解析.html">
+            
+                    
+                    2.扩展包结构与参数解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../CocosCreator学习/编辑器扩展/3.进程间的通讯.html">
+            
+                <a href="../../CocosCreator学习/编辑器扩展/3.进程间的通讯.html">
+            
+                    
+                    3.进程间的通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../../CocosCreator学习/编辑器扩展/4.调用引擎API和项目脚本.html">
+            
+                <a href="../../CocosCreator学习/编辑器扩展/4.调用引擎API和项目脚本.html">
+            
+                    
+                    4.调用引擎API和项目脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../../CocosCreator学习/编辑器扩展/字段参考.html">
+            
+                <a href="../../CocosCreator学习/编辑器扩展/字段参考.html">
+            
+                    
+                    字段参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../JavaScript学习/">
+            
+                <a href="../../JavaScript学习/">
+            
+                    
+                    JavaScript学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../JavaScript学习/RegExp正则表达式.html">
+            
+                <a href="../../JavaScript学习/RegExp正则表达式.html">
+            
+                    
+                    RegExp正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../JavaScript学习/ES6/">
+            
+                <a href="../../JavaScript学习/ES6/">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../JavaScript学习/ES6/1.let和const.html">
+            
+                <a href="../../JavaScript学习/ES6/1.let和const.html">
+            
+                    
+                    1.let和const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../JavaScript学习/ES6/2.变量的解构赋值.html">
+            
+                <a href="../../JavaScript学习/ES6/2.变量的解构赋值.html">
+            
+                    
+                    2.变量的解构赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../JavaScript学习/ES6/3.字符串扩展.html">
+            
+                <a href="../../JavaScript学习/ES6/3.字符串扩展.html">
+            
+                    
+                    3.字符串扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../../JavaScript学习/ES6/4.数值扩展.html">
+            
+                <a href="../../JavaScript学习/ES6/4.数值扩展.html">
+            
+                    
+                    4.数值扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Markdown使用方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Markdown绘图指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1.1" data-path="Mermaid使用说明.html">
+            
+                <a href="Mermaid使用说明.html">
+            
+                    
+                    Mermaid使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../命令学习/">
+            
+                <a href="../../命令学习/">
+            
+                    
+                    命令学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../命令学习/1.xcode命令.html">
+            
+                <a href="../../命令学习/1.xcode命令.html">
+            
+                    
+                    1.xcode命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Mermaid使用说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!-- TOC -->
+<ul>
+<li><a href="#mermaid-plantuml&#x4F7F;&#x7528;&#x8BF4;&#x660E;">mermaid plantUML&#x4F7F;&#x7528;&#x8BF4;&#x660E;</a><ul>
+<li><a href="#&#x4E00;&#x53C2;&#x8003;&#x5730;&#x5740;">&#x4E00;.&#x53C2;&#x8003;&#x5730;&#x5740;</a></li>
+<li><a href="#&#x4E8C;&#x5E38;&#x7528;&#x6A21;&#x578B;">&#x4E8C;.&#x5E38;&#x7528;&#x6A21;&#x578B;</a><ul>
+<li><a href="#1flowchar&#x6D41;&#x7A0B;&#x56FE;">1.Flowchar(&#x6D41;&#x7A0B;&#x56FE;)</a></li>
+<li><a href="#2&#x65F6;&#x5E8F;&#x56FE;">2.&#x65F6;&#x5E8F;&#x56FE;</a></li>
+<li><a href="#3&#x997C;&#x56FE;">3.&#x997C;&#x56FE;</a></li>
+<li><a href="#4&#x7518;&#x7279;&#x56FE;">4.&#x7518;&#x7279;&#x56FE;</a></li>
+<li><a href="#5&#x7C7B;&#x56FE;plantuml">5.&#x7C7B;&#x56FE;(PlantUMl)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h1 id="mermaid-plantuml&#x4F7F;&#x7528;&#x8BF4;&#x660E;">mermaid plantUML&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h1>
+<h2 id="&#x4E00;&#x53C2;&#x8003;&#x5730;&#x5740;">&#x4E00;.&#x53C2;&#x8003;&#x5730;&#x5740;</h2>
+<p><a href="https://mermaid-js.github.io/mermaid/#/flowchart" target="_blank">&#x53C2;&#x8003;&#x5730;&#x5740;</a></p>
+<h2 id="&#x4E8C;&#x5E38;&#x7528;&#x6A21;&#x578B;">&#x4E8C;.&#x5E38;&#x7528;&#x6A21;&#x578B;</h2>
+<h3 id="1flowchar&#x6D41;&#x7A0B;&#x56FE;">1.Flowchar(&#x6D41;&#x7A0B;&#x56FE;)</h3>
+<div class="mermaid">
+graph TD
+A[Hard] --&gt;|Text| B(Round)
+B --&gt; C{Decision}
+C --&gt;|One| D[Result 1]
+C --&gt;|Two| E[Result 2]
+</div>
+
+<pre><code>graph TD
+    A[Hard] --&gt;|Text| B(Round)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result 1]
+    C --&gt;|Two| E[Result 2]
+</code></pre><h3 id="2&#x65F6;&#x5E8F;&#x56FE;">2.&#x65F6;&#x5E8F;&#x56FE;</h3>
+<ul>
+<li>ATM&#x53D6;&#x6B3E;
+<div class="mermaid">
+sequenceDiagram
+  participant A as &#x5BA2;&#x6237;
+  participant B as &#x53D6;&#x6B3E;&#x673A;
+  participant C as &#x94F6;&#x884C;
+  Alt &#x53D6;&#x6B3E;&#x91D1;&#x989D; &gt; 10000
+  A -&gt;&gt; +B : &#x8BF7;&#x6C42;&#x53D6;&#x6B3E;
+  B -&gt;&gt; -A : &#x53D6;&#x6B3E;&#x91D1;&#x989D;&#x6BCF;&#x6B21;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7;10000
+  else &#x53D6;&#x6B3E;&#x91D1;&#x989D; &lt;= 10000
+  A -&gt;&gt; +B : &#x8BF7;&#x6C42;&#x53D6;&#x6B3E;
+  B -&gt;&gt; +C : &#x53D6;&#x6B3E;&#x8BF7;&#x6C42;
+  C -&gt;&gt; -B : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+  B -&gt;&gt; -A : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+  end
+  opt &#x53D6;&#x6B3E;
+  A -&gt;&gt; +B : &#x8BF7;&#x6C42;&#x53D6;&#x6B3E;
+  B -&gt;&gt; +C : &#x53D6;&#x6B3E;&#x8BF7;&#x6C42;
+  C -&gt;&gt; -B : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+  B -&gt;&gt; -A : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+  end
+  loop everyMinute
+  A -&gt;&gt; B : &#x67E5;&#x8BE2;&#x5B58;&#x6B3E;
+  B -&gt;&gt; A : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+  end</div></li>
+</ul>
+<p>&lt;/div&gt;</p>
+<pre><code>sequenceDiagram
+    participant A as &#x5BA2;&#x6237;
+    participant B as &#x53D6;&#x6B3E;&#x673A;
+    participant C as &#x94F6;&#x884C;
+    Alt &#x53D6;&#x6B3E;&#x91D1;&#x989D; &gt; 10000
+    A -&gt;&gt; +B : &#x8BF7;&#x6C42;&#x53D6;&#x6B3E;
+    B -&gt;&gt; -A : &#x53D6;&#x6B3E;&#x91D1;&#x989D;&#x6BCF;&#x6B21;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7;10000
+    else &#x53D6;&#x6B3E;&#x91D1;&#x989D; &lt;= 10000
+    A -&gt;&gt; +B : &#x8BF7;&#x6C42;&#x53D6;&#x6B3E;
+    B -&gt;&gt; +C : &#x53D6;&#x6B3E;&#x8BF7;&#x6C42;
+    C -&gt;&gt; -B : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+    B -&gt;&gt; -A : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+    end
+    opt &#x53D6;&#x6B3E;
+    A -&gt;&gt; +B : &#x8BF7;&#x6C42;&#x53D6;&#x6B3E;
+    B -&gt;&gt; +C : &#x53D6;&#x6B3E;&#x8BF7;&#x6C42;
+    C -&gt;&gt; -B : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+    B -&gt;&gt; -A : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+    end
+    loop every Minute
+        A -&gt;&gt; +B : &#x67E5;&#x8BE2;&#x5B58;&#x6B3E;
+        B -&gt;&gt; -A : &#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+    end
+</code></pre><h3 id="3&#x997C;&#x56FE;">3.&#x997C;&#x56FE;</h3>
+<div class="mermaid">
+pie
+title &#x52A8;&#x7269;&#x6570;
+&quot;Dogs&quot; : 386
+&quot;Cats&quot; : 85
+&quot;Rats&quot; : 150 
+&quot;Cows&quot; : 150
+</div>
+
+<pre><code>pie
+    title &#x52A8;&#x7269;&#x6570;
+    &quot;Dogs&quot; : 386
+    &quot;Cats&quot; : 85
+    &quot;Rats&quot; : 150 
+    &quot;Cows&quot; : 150
+</code></pre><h3 id="4&#x7518;&#x7279;&#x56FE;">4.&#x7518;&#x7279;&#x56FE;</h3>
+<div class="mermaid">
+gantt
+    title ganttDiagram
+    dateFormat YYYY-MM-DD
+    section Section
+    A task              :done,a1,2020-05-10,30d
+    Another task        :active,after a1,20d
+    section Section2
+    B task              :crit,a1,2020-05-10,20d
+    C task              :crit,a2,2020-05-10,2020-05-20
+
+</div>
+
+<pre><code>gantt
+    title ganttDiagram
+    dateFormat YYYY-MM-DD
+    section Section
+    A task              :done,a1,2020-05-10,30d
+    Another task        :active,after a1,20d
+    section Section2
+    B task              :crit,a1,2020-05-10,20d
+    C task              :crit,a2,2020-05-10,2020-05-20
+</code></pre><h3 id="5&#x7C7B;&#x56FE;plantuml">5.&#x7C7B;&#x56FE;(PlantUMl)</h3>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Markdown绘图指南">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../命令学习/" class="navigation navigation-next " aria-label="Next page: 命令学习">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Mermaid使用说明","level":"1.6.1.1","depth":3,"next":{"title":"命令学习","level":"1.7","depth":1,"path":"命令学习/README.md","ref":"命令学习/README.md","articles":[{"title":"1.xcode命令","level":"1.7.1","depth":2,"path":"命令学习/1.xcode命令.md","ref":"命令学习/1.xcode命令.md","articles":[]}]},"previous":{"title":"Markdown绘图指南","level":"1.6.1","depth":2,"path":"Markdown使用方法/Markdown绘图指南/README.md","ref":"Markdown使用方法/Markdown绘图指南/README.md","articles":[{"title":"Mermaid使用说明","level":"1.6.1.1","depth":3,"path":"Markdown使用方法/Markdown绘图指南/Mermaid使用说明.md","ref":"Markdown使用方法/Markdown绘图指南/Mermaid使用说明.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["mermaid-gb3","copy-code-button","chapter-fold","splitter","popup","search-pro","local-video","toc","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"toc":{"addClass":true,"className":"toc"},"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"local-video":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"郭峰","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人笔记","language":"zh-hans","gitbook":"*","description":"个人笔记"},"file":{"path":"Markdown使用方法/Markdown绘图指南/Mermaid使用说明.md","mtime":"2021-01-13T08:56:20.162Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-01T09:21:00.463Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

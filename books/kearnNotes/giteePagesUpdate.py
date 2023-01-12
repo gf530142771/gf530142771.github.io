@@ -1,14 +1,4 @@
-'''
-Author: guofeng
-Date: 2021-04-22 14:54:22
-LastEditTime: 2021-04-28 10:28:08
-LastEditors: guofeng
-Description: 
-FilePath: /markdown-notes/giteePagesUpdate.py
-symbol_custom_string_obkoro1: 
-'''
 # -*- coding: UTF-8 -*-
-
 # from playwright import sync_playwright
 from playwright.sync_api import sync_playwright
 import time

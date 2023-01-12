@@ -1,0 +1,11 @@
+{
+    "editor.codeActionsOnSave": null,
+
+    //关于vim的配置文件
+    //命令行模式非递归键位绑定，在原生vim中等同于norecmap
+    "vim.commandLineModeKeyBindingsNonRecursive": [],
+    //插入模式下键位绑定，在原生vim里面指的是imap。
+    "vim.insertModeKeyBindings": [],
+    // 普通模式下非递归键位绑定，在原生vim中是noremap。
+    "vim.normalModeKeyBindingsNonRecursive": []
+}

@@ -1,5 +1,5 @@
 echo '生成目录'
-python ../python-utils/main.py
+python3 ../python-utils/main.py
 
 echo '构建gitbook'
 gitbook build

@@ -1,1 +1,0 @@
-## TypeSctipt学习

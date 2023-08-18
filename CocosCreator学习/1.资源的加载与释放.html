@@ -1,0 +1,1398 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.资源的加载与释放 · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="郭峰">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="优秀的第三方插件/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../AndroidStudio常见问题解决/">
+            
+                <a href="../AndroidStudio常见问题解决/">
+            
+                    
+                    AndroidStudio常见问题解决
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../AndroidStudio常见问题解决/1.常见问题.html">
+            
+                <a href="../AndroidStudio常见问题解决/1.常见问题.html">
+            
+                    
+                    1.常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../CocosCreatorMVC框架结构设计/">
+            
+                <a href="../CocosCreatorMVC框架结构设计/">
+            
+                    
+                    CocosCreatorMVC框架结构设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../CocosCreatorMVC框架结构设计/1.设计总纲.html">
+            
+                <a href="../CocosCreatorMVC框架结构设计/1.设计总纲.html">
+            
+                    
+                    1.设计总纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CocosCreator学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="1.资源的加载与释放.html">
+            
+                <a href="1.资源的加载与释放.html">
+            
+                    
+                    1.资源的加载与释放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="优秀的第三方插件/">
+            
+                <a href="优秀的第三方插件/">
+            
+                    
+                    优秀的第三方插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="优秀的第三方插件/1.多语言插件.html">
+            
+                <a href="优秀的第三方插件/1.多语言插件.html">
+            
+                    
+                    1.多语言插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="编辑器扩展/">
+            
+                <a href="编辑器扩展/">
+            
+                    
+                    编辑器扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="编辑器扩展/字段参考.html">
+            
+                <a href="编辑器扩展/字段参考.html">
+            
+                    
+                    字段参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="编辑器扩展/1.扩展包的安装与结构.html">
+            
+                <a href="编辑器扩展/1.扩展包的安装与结构.html">
+            
+                    
+                    1.扩展包的安装与结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="编辑器扩展/2.扩展包结构与参数解析.html">
+            
+                <a href="编辑器扩展/2.扩展包结构与参数解析.html">
+            
+                    
+                    2.扩展包结构与参数解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="编辑器扩展/3.进程间的通讯.html">
+            
+                <a href="编辑器扩展/3.进程间的通讯.html">
+            
+                    
+                    3.进程间的通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="编辑器扩展/4.调用引擎API和项目脚本.html">
+            
+                <a href="编辑器扩展/4.调用引擎API和项目脚本.html">
+            
+                    
+                    4.调用引擎API和项目脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="网络连接/">
+            
+                <a href="网络连接/">
+            
+                    
+                    网络连接
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="网络连接/1.短链接.html">
+            
+                <a href="网络连接/1.短链接.html">
+            
+                    
+                    1.短链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="网络连接/2.长连接.html">
+            
+                <a href="网络连接/2.长连接.html">
+            
+                    
+                    2.长连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="网络连接/3.下载.html">
+            
+                <a href="网络连接/3.下载.html">
+            
+                    
+                    3.下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="资源管理/">
+            
+                <a href="资源管理/">
+            
+                    
+                    资源管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="资源管理/1.资源的加载与释放.html">
+            
+                <a href="资源管理/1.资源的加载与释放.html">
+            
+                    
+                    1.资源的加载与释放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="资源管理/2.AssetBundle详解.html">
+            
+                <a href="资源管理/2.AssetBundle详解.html">
+            
+                    
+                    2.AssetBundle详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.3" data-path="资源管理/3.下载和解析.html">
+            
+                <a href="资源管理/3.下载和解析.html">
+            
+                    
+                    3.下载和解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.4" data-path="资源管理/4.缓存管理.html">
+            
+                <a href="资源管理/4.缓存管理.html">
+            
+                    
+                    4.缓存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../JavaScript学习/">
+            
+                <a href="../JavaScript学习/">
+            
+                    
+                    JavaScript学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../JavaScript学习/RegExp正则表达式.html">
+            
+                <a href="../JavaScript学习/RegExp正则表达式.html">
+            
+                    
+                    RegExp正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../JavaScript学习/ES6/">
+            
+                <a href="../JavaScript学习/ES6/">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../JavaScript学习/ES6/1.let和const.html">
+            
+                <a href="../JavaScript学习/ES6/1.let和const.html">
+            
+                    
+                    1.let和const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../JavaScript学习/ES6/2.变量的解构赋值.html">
+            
+                <a href="../JavaScript学习/ES6/2.变量的解构赋值.html">
+            
+                    
+                    2.变量的解构赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../JavaScript学习/ES6/3.字符串扩展.html">
+            
+                <a href="../JavaScript学习/ES6/3.字符串扩展.html">
+            
+                    
+                    3.字符串扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../JavaScript学习/ES6/4.数值扩展.html">
+            
+                <a href="../JavaScript学习/ES6/4.数值扩展.html">
+            
+                    
+                    4.数值扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Markdown使用方法/">
+            
+                <a href="../Markdown使用方法/">
+            
+                    
+                    Markdown使用方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Markdown使用方法/Markdown绘图指南/">
+            
+                <a href="../Markdown使用方法/Markdown绘图指南/">
+            
+                    
+                    Markdown绘图指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../Markdown使用方法/Markdown绘图指南/Mermaid使用说明.html">
+            
+                <a href="../Markdown使用方法/Markdown绘图指南/Mermaid使用说明.html">
+            
+                    
+                    Mermaid使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Solitaire项目笔记/">
+            
+                <a href="../Solitaire项目笔记/">
+            
+                    
+                    Solitaire项目笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Solitaire项目笔记/项目概况/">
+            
+                <a href="../Solitaire项目笔记/项目概况/">
+            
+                    
+                    项目概况
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../Solitaire项目笔记/项目概况/1.项目初探/">
+            
+                <a href="../Solitaire项目笔记/项目概况/1.项目初探/">
+            
+                    
+                    1.项目初探
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1.1" data-path="../Solitaire项目笔记/项目概况/1.项目初探/1.项目初探.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/1.项目初探/1.项目初探.html">
+            
+                    
+                    1.项目初探
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.2" data-path="../Solitaire项目笔记/项目概况/1.项目初探/2.preloadScene.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/1.项目初探/2.preloadScene.html">
+            
+                    
+                    2.preloadScene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.3" data-path="../Solitaire项目笔记/项目概况/1.项目初探/3.HomeScene.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/1.项目初探/3.HomeScene.html">
+            
+                    
+                    3.HomeScene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.4" data-path="../Solitaire项目笔记/项目概况/1.项目初探/4.PlayScene.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/1.项目初探/4.PlayScene.html">
+            
+                    
+                    4.PlayScene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.5" data-path="../Solitaire项目笔记/项目概况/1.项目初探/5.mgr目录.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/1.项目初探/5.mgr目录.html">
+            
+                    
+                    5.mgr目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.6" data-path="../Solitaire项目笔记/项目概况/1.项目初探/6.脚本的使用.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/1.项目初探/6.脚本的使用.html">
+            
+                    
+                    6.脚本的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="../Solitaire项目笔记/项目概况/2.UI绘制/">
+            
+                <a href="../Solitaire项目笔记/项目概况/2.UI绘制/">
+            
+                    
+                    2.UI绘制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.2.1" data-path="../Solitaire项目笔记/项目概况/2.UI绘制/1.creator界面的使用.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/2.UI绘制/1.creator界面的使用.html">
+            
+                    
+                    1.creator界面的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2.2" data-path="../Solitaire项目笔记/项目概况/2.UI绘制/2.基本界面的创建.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/2.UI绘制/2.基本界面的创建.html">
+            
+                    
+                    2.基本界面的创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="../Solitaire项目笔记/项目概况/3.热更新/">
+            
+                <a href="../Solitaire项目笔记/项目概况/3.热更新/">
+            
+                    
+                    3.热更新
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.3.1" data-path="../Solitaire项目笔记/项目概况/3.热更新/1.常见问题.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/3.热更新/1.常见问题.html">
+            
+                    
+                    1.常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3.2" data-path="../Solitaire项目笔记/项目概况/3.热更新/2.线上项目更新流程.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/3.热更新/2.线上项目更新流程.html">
+            
+                    
+                    2.线上项目更新流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4" data-path="../Solitaire项目笔记/项目概况/4.骰子活动/">
+            
+                <a href="../Solitaire项目笔记/项目概况/4.骰子活动/">
+            
+                    
+                    4.骰子活动
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.4.1" data-path="../Solitaire项目笔记/项目概况/4.骰子活动/1.骰子活动扩展.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/4.骰子活动/1.骰子活动扩展.html">
+            
+                    
+                    1.骰子活动扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4.2" data-path="../Solitaire项目笔记/项目概况/4.骰子活动/2.骰子活动说明.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/4.骰子活动/2.骰子活动说明.html">
+            
+                    
+                    2.骰子活动说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.5" data-path="../Solitaire项目笔记/项目概况/5.版本更新/">
+            
+                <a href="../Solitaire项目笔记/项目概况/5.版本更新/">
+            
+                    
+                    5.版本更新
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.5.1" data-path="../Solitaire项目笔记/项目概况/5.版本更新/1.版本更新注意事项.html">
+            
+                <a href="../Solitaire项目笔记/项目概况/5.版本更新/1.版本更新注意事项.html">
+            
+                    
+                    1.版本更新注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../TypeScript学习/">
+            
+                <a href="../TypeScript学习/">
+            
+                    
+                    TypeScript学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../TypeScript学习/1.基础类型.html">
+            
+                <a href="../TypeScript学习/1.基础类型.html">
+            
+                    
+                    1.基础类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../TypeScript学习/2.变量声明.html">
+            
+                <a href="../TypeScript学习/2.变量声明.html">
+            
+                    
+                    2.变量声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../TypeScript学习/3.接口.html">
+            
+                <a href="../TypeScript学习/3.接口.html">
+            
+                    
+                    3.接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../TypeScript学习/4.类.html">
+            
+                <a href="../TypeScript学习/4.类.html">
+            
+                    
+                    4.类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../TypeScript学习/5.函数.html">
+            
+                <a href="../TypeScript学习/5.函数.html">
+            
+                    
+                    5.函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../TypeScript学习/6.枚举.html">
+            
+                <a href="../TypeScript学习/6.枚举.html">
+            
+                    
+                    6.枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../TypeScript学习/7.泛型.html">
+            
+                <a href="../TypeScript学习/7.泛型.html">
+            
+                    
+                    7.泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../TypeScript学习/8.类型推断和类型兼容.html">
+            
+                <a href="../TypeScript学习/8.类型推断和类型兼容.html">
+            
+                    
+                    8.类型推断和类型兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../TypeScript学习/9.高级类型.html">
+            
+                <a href="../TypeScript学习/9.高级类型.html">
+            
+                    
+                    9.高级类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../TypeScript学习/10.装饰器.html">
+            
+                <a href="../TypeScript学习/10.装饰器.html">
+            
+                    
+                    10.装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../命令学习/">
+            
+                <a href="../命令学习/">
+            
+                    
+                    命令学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../命令学习/1.xcode命令.html">
+            
+                <a href="../命令学习/1.xcode命令.html">
+            
+                    
+                    1.xcode命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.资源的加载与释放</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!--
+ * @Author: guofeng
+ * @Date: 2021-04-26 17:03:18
+ * @LastEditTime: 2021-04-28 10:23:45
+ * @LastEditors: guofeng
+ * @Description: 
+ * @FilePath: /markdown-notes/CocosCreator学习/1.资源的加载与释放.md
+ * 
+-->
+<!-- TOC -->
+<ul>
+<li><a href="#cocoscreator&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#x4E00;-&#x8D44;&#x6E90;&#x7684;&#x52A0;&#x8F7D;&#x548C;&#x91CA;&#x653E;">CocosCreator&#x5B66;&#x4E60;&#x7B14;&#x8BB0;(&#x4E00;) &#x8D44;&#x6E90;&#x7684;&#x52A0;&#x8F7D;&#x548C;&#x91CA;&#x653E;</a><ul>
+<li><a href="#&#x4E00;&#x8D44;&#x6E90;&#x7684;&#x7F13;&#x5B58;&#x4F4D;&#x7F6E;">&#x4E00;.&#x8D44;&#x6E90;&#x7684;&#x7F13;&#x5B58;&#x4F4D;&#x7F6E;</a></li>
+<li><a href="#&#x4E8C;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x6CD5;">&#x4E8C;.&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x6CD5;</a></li>
+<li><a href="#&#x4E09;&#x9759;&#x6001;&#x5F15;&#x7528;&#x548C;&#x52A8;&#x6001;&#x5F15;&#x7528;">&#x4E09;.&#x9759;&#x6001;&#x5F15;&#x7528;&#x548C;&#x52A8;&#x6001;&#x5F15;&#x7528;</a><ul>
+<li><a href="#&#x9759;&#x6001;&#x5F15;&#x7528;">&#x9759;&#x6001;&#x5F15;&#x7528;</a><ul>
+<li><a href="#&#x5F15;&#x64CE;&#x5982;&#x4F55;&#x5904;&#x7406;&#x9759;&#x6001;&#x5F15;&#x7528;">&#x5F15;&#x64CE;&#x5982;&#x4F55;&#x5904;&#x7406;&#x9759;&#x6001;&#x5F15;&#x7528;</a></li>
+</ul>
+</li>
+<li><a href="#&#x52A8;&#x6001;&#x5F15;&#x7528;">&#x52A8;&#x6001;&#x5F15;&#x7528;</a><ul>
+<li><a href="#1&#x52A8;&#x6001;&#x52A0;&#x8F7D;resources&#x4E2D;&#x7684;&#x8D44;&#x6E90;">1.&#x52A8;&#x6001;&#x52A0;&#x8F7D;resources&#x4E2D;&#x7684;&#x8D44;&#x6E90;</a></li>
+<li><a href="#2&#x52A0;&#x8F7D;bundle&#x4E2D;&#x7684;&#x8D44;&#x6E90;">2.&#x52A0;&#x8F7D;bundle&#x4E2D;&#x7684;&#x8D44;&#x6E90;</a></li>
+<li><a href="#3&#x52A8;&#x6001;&#x5F15;&#x7528;&#x7684;&#x8D44;&#x6E90;&#x7BA1;&#x7406;">3.&#x52A8;&#x6001;&#x5F15;&#x7528;&#x7684;&#x8D44;&#x6E90;&#x7BA1;&#x7406;</a></li>
+<li><a href="#4&#x6E90;&#x7801;&#x5730;&#x5740;">4.&#x6E90;&#x7801;&#x5730;&#x5740;</a></li>
+<li><a href="#&#x8D44;&#x6E90;&#x5220;&#x9664;&#x6D41;&#x7A0B;&#x56FE;">&#x8D44;&#x6E90;&#x5220;&#x9664;&#x6D41;&#x7A0B;&#x56FE;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h1 id="cocoscreator&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#x4E00;-&#x8D44;&#x6E90;&#x7684;&#x52A0;&#x8F7D;&#x548C;&#x91CA;&#x653E;">CocosCreator&#x5B66;&#x4E60;&#x7B14;&#x8BB0;(&#x4E00;) &#x8D44;&#x6E90;&#x7684;&#x52A0;&#x8F7D;&#x548C;&#x91CA;&#x653E;</h1>
+<h2 id="&#x4E00;&#x8D44;&#x6E90;&#x7684;&#x7F13;&#x5B58;&#x4F4D;&#x7F6E;">&#x4E00;.&#x8D44;&#x6E90;&#x7684;&#x7F13;&#x5B58;&#x4F4D;&#x7F6E;</h2>
+<p>Creator&#x7684;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x540E;&#x4F1A;&#x5B58;&#x50A8;&#x5728;<strong>cc.asssetManager.assets</strong>&#x4E2D;</p>
+<p>&#x7C7B;&#x578B;&#x4E3A;<strong>cc.AssetManager.Cache</strong>  &#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;Map&#x7684;&#x7ED3;&#x6784;</p>
+<p><img src="images/article_1_1.jpg" alt=""></p>
+<p>&#x8D44;&#x6E90;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<strong>&#x81EA;&#x52A8;&#x91CA;&#x653E;</strong>&#x548C;<strong>&#x624B;&#x52A8;&#x91CA;&#x653E;</strong>&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x91CA;&#x653E; <strong>cc.assetManager</strong>&#x7BA1;&#x7406;&#x8D44;&#x6E90;&#x7684;&#x884C;&#x4E3A;&#x548C;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x52A0;&#x8F7D;&#xFF0C;&#x91CA;&#x653E;&#x7B49;&#x3002;</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">/*@example 
+&#x91CA;&#x653E;&#x5355;&#x4E2A;&#x8D44;&#x6E90;
+cc.assetManager.releaseAsset(texture);
+*/</span>
+releaseAsset(asset: cc.Asset): <span class="hljs-built_in">void</span>;
+<span class="hljs-comment">/**
+&#x91CA;&#x653E;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x3002;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x8003;
+*/</span>
+releaseAll(): <span class="hljs-built_in">void</span>;
+</code></pre>
+<h2 id="&#x4E8C;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x6CD5;">&#x4E8C;.&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x6CD5;</h2>
+<p>cocos2d-x&#x4E00;&#x79CD;&#x5E38;&#x7528;&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x8BA1;&#x6570;&#xFF0C;&#x57FA;&#x672C;&#x539F;&#x7406;&#x5C06;&#x8D44;&#x6E90;&#x7684;&#x5F15;&#x7528;&#x6B21;&#x6570;&#x4FDD;&#x5B58;&#x8D77;&#x6765;&#xFF0C;&#x6BCF;&#x6B21;&#x91CA;&#x653E;&#x8BA1;&#x6570;&#x51CF;1&#xFF0C;&#x5F53;&#x8BA1;&#x6570;&#x4E3A;0&#x65F6; &#x91CA;&#x653E;&#x6389;&#x8D44;&#x6E90;</p>
+<p><strong>cocoscreator&#x7684;&#x8D44;&#x6E90;&#x51FD;&#x6570;</strong><br>addRef() &#x589E;&#x52A0;&#x5F15;&#x7528;&#x8BA1;&#x6570;<br>decRef(autoRelease) &#x51CF;&#x5C11;&#x5F15;&#x7528;&#x8BA1;&#x6570;<br><strong>&#x6CE8;&#x610F;:</strong><br> AssetManager&#x53EA;&#x4F1A;&#x81EA;&#x52A8;&#x7EDF;&#x8BA1;<code>&#x9759;&#x6001;&#x5F15;&#x7528;</code> 
+ &#x5F00;&#x53D1;&#x8005;<code>&#x52A8;&#x6001;&#x5F15;&#x7528;</code>&#x7684;&#x8D44;&#x6E90;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x52A0;&#x4EE5;&#x63A7;&#x5236;&#x5E76;&#x91CA;&#x653E;</p>
+<h2 id="&#x4E09;&#x9759;&#x6001;&#x5F15;&#x7528;&#x548C;&#x52A8;&#x6001;&#x5F15;&#x7528;">&#x4E09;.&#x9759;&#x6001;&#x5F15;&#x7528;&#x548C;&#x52A8;&#x6001;&#x5F15;&#x7528;</h2>
+<h3 id="&#x9759;&#x6001;&#x5F15;&#x7528;">&#x9759;&#x6001;&#x5F15;&#x7528;</h3>
+<p>&#x76F4;&#x63A5;&#x5728;&#x7F16;&#x8F91;&#x5668;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x8D44;&#x6E90;<br>&#x5728;&#x7F16;&#x8F91;&#x5668;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x8D44;&#x6E90; &#x5F15;&#x64CE;&#x4F1A;&#x81EA;&#x52A8;&#x5206;&#x6790;&#x51FA;&#x4EE5;&#x6765;&#x8D44;&#x6E90;&#x7684;&#x5217;&#x8868; &#x8FD9;&#x6837;&#x7684;&#x8D44;&#x6E90;&#x5F15;&#x7528; &#x88AB;&#x89C6;&#x4E3A; <strong>&#x9759;&#x6001;&#x5F15;&#x7528;</strong></p>
+<h4 id="&#x5F15;&#x64CE;&#x5982;&#x4F55;&#x5904;&#x7406;&#x9759;&#x6001;&#x5F15;&#x7528;">&#x5F15;&#x64CE;&#x5982;&#x4F55;&#x5904;&#x7406;&#x9759;&#x6001;&#x5F15;&#x7528;</h4>
+<ol>
+<li><p>&#x5728;<strong>&#x9759;&#x6001;&#x52A0;&#x8F7D;</strong>&#x67D0;&#x4E2A;&#x8D44;&#x6E90;&#x65F6;&#xFF0C;&#x5F15;&#x64CE;&#x4F1A;&#x8BB0;&#x5F55;&#x8BE5;&#x8D44;&#x6E90;&#x6240;&#x6709;<strong>&#x76F4;&#x63A5;&#x4F9D;&#x8D56;&#x8D44;&#x6E90;</strong>&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5C06;&#x6240;&#x6709;<strong>&#x76F4;&#x63A5;&#x4F9D;&#x8D56;&#x8D44;&#x6E90;</strong>&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x52A0; 1&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8BE5;&#x8D44;&#x6E90;&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x521D;&#x59CB;&#x5316;&#x4E3A; 0</p>
+</li>
+<li><p>&#x5728;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x65F6;&#xFF0C;&#x53D6;&#x5F97;&#x8BE5;&#x8D44;&#x6E90;&#x4E4B;&#x524D;&#x8BB0;&#x5F55;&#x7684;&#x6240;&#x6709;<strong>&#x76F4;&#x63A5;&#x4F9D;&#x8D56;&#x8D44;&#x6E90;</strong>&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5C06;&#x6240;&#x6709;&#x4F9D;&#x8D56;&#x8D44;&#x6E90;&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x51CF;1 &#x53EA;&#x6709;&#x8D44;&#x6E90;&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x4E3A;0&#x65F6;&#x624D;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x91CA;</p>
+</li>
+</ol>
+<p><strong>&#x573A;&#x666F;&#x7684;&#x81EA;&#x52A8;&#x91CA;&#x653E;</strong><br><img src="images/article_1_4.jpg" alt=""> </p>
+<h3 id="&#x52A8;&#x6001;&#x5F15;&#x7528;">&#x52A8;&#x6001;&#x5F15;&#x7528;</h3>
+<h4 id="1&#x52A8;&#x6001;&#x52A0;&#x8F7D;resources&#x4E2D;&#x7684;&#x8D44;&#x6E90;">1.&#x52A8;&#x6001;&#x52A0;&#x8F7D;resources&#x4E2D;&#x7684;&#x8D44;&#x6E90;</h4>
+<pre><code class="lang-TypeScript">cc.resources.load(<span class="hljs-string">&quot;HelloWorld&quot;</span>, cc.SpriteFrame, (err, assets: cc.SpriteFrame) =&gt; {
+
+});
+</code></pre>
+<h4 id="2&#x52A0;&#x8F7D;bundle&#x4E2D;&#x7684;&#x8D44;&#x6E90;">2.&#x52A0;&#x8F7D;bundle&#x4E2D;&#x7684;&#x8D44;&#x6E90;</h4>
+<pre><code class="lang-TypeScript">cc.assetManager.loadBundle(<span class="hljs-string">&quot;bundle&quot;</span>, (err: <span class="hljs-built_in">Error</span>, bundle: cc.AssetManager.Bundle) =&gt; {
+    bundle.load(<span class="hljs-string">&quot;HelloWorld&quot;</span>, cc.SpriteFrame, (err, assets: cc.SpriteFrame) =&gt; {
+
+    });
+});
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;</strong><br><strong>resources</strong>&#x5176;&#x5B9E;&#x4E5F;&#x662F;&#x5B98;&#x65B9;&#x5185;&#x7F6E;&#x7684;<strong>Asset Bundle</strong><br><strong>cc.resources</strong>&#x7684;&#x7C7B;&#x578B;&#x5176;&#x5B9E;&#x5C31;&#x662F;  </p>
+<pre><code class="lang-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">var</span> resources: AssetManager.Bundle;
+</code></pre>
+<p><strong>&#x5B98;&#x65B9;&#x5185;&#x7F6E;&#x7684;Bundle</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5185;&#x7F6E; Asset Bundle</th>
+<th style="text-align:left">&#x529F;&#x80FD;&#x8BF4;&#x660E;</th>
+<th style="text-align:left">&#x914D;&#x7F6E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p>internal|    &#x5B58;&#x653E;&#x6240;&#x6709;&#x5185;&#x7F6E;&#x8D44;&#x6E90;&#x4EE5;&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x8D44;&#x6E90;|    &#x901A;&#x8FC7;&#x914D;&#x7F6E; &#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668; &#x4E2D;&#x7684; internal -&gt; resources &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4F46;&#x76EE;&#x524D;&#x4E0D;&#x652F;&#x6301;&#x4FEE;&#x6539;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;<br>main    |&#x5B58;&#x653E;&#x6240;&#x6709;&#x5728; &#x6784;&#x5EFA;&#x53D1;&#x5E03; &#x9762;&#x677F;&#x7684; &#x53C2;&#x4E0E;&#x6784;&#x5EFA;&#x573A;&#x666F; &#x4E2D;&#x52FE;&#x9009;&#x7684;&#x573A;&#x666F;&#x4EE5;&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x8D44;&#x6E90;    |&#x901A;&#x8FC7;&#x914D;&#x7F6E; &#x6784;&#x5EFA;&#x53D1;&#x5E03; &#x9762;&#x677F;&#x7684; &#x4E3B;&#x5305;&#x538B;&#x7F29;&#x7C7B;&#x578B; &#x548C; &#x914D;&#x7F6E;&#x4E3B;&#x5305;&#x4E3A;&#x8FDC;&#x7A0B;&#x5305; &#x4E24;&#x9879;
+resources|&#x5B58;&#x653E; resources &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x4EE5;&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#x8D44;&#x6E90;    |&#x901A;&#x8FC7;&#x914D;&#x7F6E; &#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668; &#x4E2D;&#x7684; assets -&gt; resources &#x6587;&#x4EF6;&#x5939;
+start-scene    |&#x5982;&#x679C;&#x5728; &#x6784;&#x5EFA;&#x53D1;&#x5E03; &#x9762;&#x677F;&#x4E2D;&#x52FE;&#x9009;&#x4E86; &#x521D;&#x59CB;&#x573A;&#x666F;&#x5206;&#x5305;&#xFF0C;&#x5219;&#x9996;&#x573A;&#x666F;&#x5C06;&#x4F1A;&#x88AB;&#x6784;&#x5EFA;&#x5230; start-scene &#x4E2D;&#x3002;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x53EF;&#x53C2;&#x8003; &#x521D;&#x59CB;&#x573A;&#x666F;&#x7684;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x3002;|&#x65E0;&#x6CD5;&#x8FDB;&#x884C;&#x914D;&#x7F6E; </p>
+<p>&#x6240;&#x4EE5;&#x8BFB;&#x53D6;<strong>resources</strong>&#x4E2D;&#x7684;&#x8D44;&#x6E90;&#x4F7F;&#x4E5F;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;</p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> bundle = cc.assetManager.getBundle(<span class="hljs-string">&apos;resources&apos;</span>);
+bundle.load(<span class="hljs-string">&quot;HelloWorld&quot;</span>, cc.SpriteFrame, (err, assets: cc.SpriteFrame) =&gt; {
+
+});
+</code></pre>
+<h4 id="3&#x52A8;&#x6001;&#x5F15;&#x7528;&#x7684;&#x8D44;&#x6E90;&#x7BA1;&#x7406;">3.&#x52A8;&#x6001;&#x5F15;&#x7528;&#x7684;&#x8D44;&#x6E90;&#x7BA1;&#x7406;</h4>
+<ul>
+<li>&#x901A;&#x8FC7;decRef()&#x7684;&#x65B9;&#x6CD5; &#x4F7F;&#x5F15;&#x7528;&#x8BA1;&#x6570;-1<br>creator&#x4F1A;&#x6839;&#x636E;&#x8BA1;&#x6570;&#x81EA;&#x52A8;&#x8FDB;&#x884C;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x3002;</li>
+<li>&#x4F7F;&#x7528;assetManager &#x7684;&#x76F8;&#x5173;&#x63A5;&#x53E3;&#x6765;&#x624B;&#x52A8;&#x91CA;&#x653E;&#x8D44;&#x6E90;<pre><code class="lang-javascript">cc.assetManager.releaseAsset(texture);
+</code></pre>
+<strong>&#x6CE8;&#x610F;&#xFF1A;</strong>
+release&#x7CFB;&#x5217;&#x63A5;&#x53E3; &#x4F1A;&#x76F4;&#x63A5;&#x91CA;&#x653E;&#x8D44;&#x6E90; &#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x68C0;&#x67E5;&#x8BA1;&#x6570;&#x3002;</li>
+</ul>
+<h4 id="4&#x6E90;&#x7801;&#x5730;&#x5740;">4.&#x6E90;&#x7801;&#x5730;&#x5740;</h4>
+<p>/Resources/engine/cocos2d/core/asset-manager/releaseManager.js</p>
+<h4 id="&#x8D44;&#x6E90;&#x5220;&#x9664;&#x6D41;&#x7A0B;&#x56FE;">&#x8D44;&#x6E90;&#x5220;&#x9664;&#x6D41;&#x7A0B;&#x56FE;</h4>
+<p><img src="images/article_1_2.jpg" alt=""></p>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: CocosCreator学习">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="优秀的第三方插件/" class="navigation navigation-next " aria-label="Next page: 优秀的第三方插件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.资源的加载与释放","level":"1.4.1","depth":2,"next":{"title":"优秀的第三方插件","level":"1.4.2","depth":2,"path":"CocosCreator学习/优秀的第三方插件/README.md","ref":"CocosCreator学习/优秀的第三方插件/README.md","articles":[{"title":"1.多语言插件","level":"1.4.2.1","depth":3,"path":"CocosCreator学习/优秀的第三方插件/1.多语言插件.md","ref":"CocosCreator学习/优秀的第三方插件/1.多语言插件.md","articles":[]}]},"previous":{"title":"CocosCreator学习","level":"1.4","depth":1,"path":"CocosCreator学习/README.md","ref":"CocosCreator学习/README.md","articles":[{"title":"1.资源的加载与释放","level":"1.4.1","depth":2,"path":"CocosCreator学习/1.资源的加载与释放.md","ref":"CocosCreator学习/1.资源的加载与释放.md","articles":[]},{"title":"优秀的第三方插件","level":"1.4.2","depth":2,"path":"CocosCreator学习/优秀的第三方插件/README.md","ref":"CocosCreator学习/优秀的第三方插件/README.md","articles":[{"title":"1.多语言插件","level":"1.4.2.1","depth":3,"path":"CocosCreator学习/优秀的第三方插件/1.多语言插件.md","ref":"CocosCreator学习/优秀的第三方插件/1.多语言插件.md","articles":[]}]},{"title":"编辑器扩展","level":"1.4.3","depth":2,"path":"CocosCreator学习/编辑器扩展/README.md","ref":"CocosCreator学习/编辑器扩展/README.md","articles":[{"title":"字段参考","level":"1.4.3.1","depth":3,"path":"CocosCreator学习/编辑器扩展/字段参考.md","ref":"CocosCreator学习/编辑器扩展/字段参考.md","articles":[]},{"title":"1.扩展包的安装与结构","level":"1.4.3.2","depth":3,"path":"CocosCreator学习/编辑器扩展/1.扩展包的安装与结构.md","ref":"CocosCreator学习/编辑器扩展/1.扩展包的安装与结构.md","articles":[]},{"title":"2.扩展包结构与参数解析","level":"1.4.3.3","depth":3,"path":"CocosCreator学习/编辑器扩展/2.扩展包结构与参数解析.md","ref":"CocosCreator学习/编辑器扩展/2.扩展包结构与参数解析.md","articles":[]},{"title":"3.进程间的通讯","level":"1.4.3.4","depth":3,"path":"CocosCreator学习/编辑器扩展/3.进程间的通讯.md","ref":"CocosCreator学习/编辑器扩展/3.进程间的通讯.md","articles":[]},{"title":"4.调用引擎API和项目脚本","level":"1.4.3.5","depth":3,"path":"CocosCreator学习/编辑器扩展/4.调用引擎API和项目脚本.md","ref":"CocosCreator学习/编辑器扩展/4.调用引擎API和项目脚本.md","articles":[]}]},{"title":"网络连接","level":"1.4.4","depth":2,"path":"CocosCreator学习/网络连接/README.md","ref":"CocosCreator学习/网络连接/README.md","articles":[{"title":"1.短链接","level":"1.4.4.1","depth":3,"path":"CocosCreator学习/网络连接/1.短链接.md","ref":"CocosCreator学习/网络连接/1.短链接.md","articles":[]},{"title":"2.长连接","level":"1.4.4.2","depth":3,"path":"CocosCreator学习/网络连接/2.长连接.md","ref":"CocosCreator学习/网络连接/2.长连接.md","articles":[]},{"title":"3.下载","level":"1.4.4.3","depth":3,"path":"CocosCreator学习/网络连接/3.下载.md","ref":"CocosCreator学习/网络连接/3.下载.md","articles":[]}]},{"title":"资源管理","level":"1.4.5","depth":2,"path":"CocosCreator学习/资源管理/README.md","ref":"CocosCreator学习/资源管理/README.md","articles":[{"title":"1.资源的加载与释放","level":"1.4.5.1","depth":3,"path":"CocosCreator学习/资源管理/1.资源的加载与释放.md","ref":"CocosCreator学习/资源管理/1.资源的加载与释放.md","articles":[]},{"title":"2.AssetBundle详解","level":"1.4.5.2","depth":3,"path":"CocosCreator学习/资源管理/2.AssetBundle详解.md","ref":"CocosCreator学习/资源管理/2.AssetBundle详解.md","articles":[]},{"title":"3.下载和解析","level":"1.4.5.3","depth":3,"path":"CocosCreator学习/资源管理/3.下载和解析.md","ref":"CocosCreator学习/资源管理/3.下载和解析.md","articles":[]},{"title":"4.缓存管理","level":"1.4.5.4","depth":3,"path":"CocosCreator学习/资源管理/4.缓存管理.md","ref":"CocosCreator学习/资源管理/4.缓存管理.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["mermaid-gb3","copy-code-button","chapter-fold","splitter","popup","search-pro","local-video","toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"toc":{"addClass":true,"className":"toc"},"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"local-video":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"郭峰","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人笔记","language":"zh-hans","gitbook":"*","description":"个人笔记"},"file":{"path":"CocosCreator学习/1.资源的加载与释放.md","mtime":"2021-04-28T02:39:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-18T07:15:18.516Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

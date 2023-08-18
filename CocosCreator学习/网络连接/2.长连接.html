@@ -1,0 +1,1476 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.长连接 · 个人笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="郭峰">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.下载.html" />
+    
+    
+    <link rel="prev" href="1.短链接.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../AndroidStudio常见问题解决/">
+            
+                <a href="../../AndroidStudio常见问题解决/">
+            
+                    
+                    AndroidStudio常见问题解决
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../AndroidStudio常见问题解决/1.常见问题.html">
+            
+                <a href="../../AndroidStudio常见问题解决/1.常见问题.html">
+            
+                    
+                    1.常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../CocosCreatorMVC框架结构设计/">
+            
+                <a href="../../CocosCreatorMVC框架结构设计/">
+            
+                    
+                    CocosCreatorMVC框架结构设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../CocosCreatorMVC框架结构设计/1.设计总纲.html">
+            
+                <a href="../../CocosCreatorMVC框架结构设计/1.设计总纲.html">
+            
+                    
+                    1.设计总纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    CocosCreator学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../1.资源的加载与释放.html">
+            
+                <a href="../1.资源的加载与释放.html">
+            
+                    
+                    1.资源的加载与释放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../优秀的第三方插件/">
+            
+                <a href="../优秀的第三方插件/">
+            
+                    
+                    优秀的第三方插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../优秀的第三方插件/1.多语言插件.html">
+            
+                <a href="../优秀的第三方插件/1.多语言插件.html">
+            
+                    
+                    1.多语言插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../编辑器扩展/">
+            
+                <a href="../编辑器扩展/">
+            
+                    
+                    编辑器扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../编辑器扩展/字段参考.html">
+            
+                <a href="../编辑器扩展/字段参考.html">
+            
+                    
+                    字段参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../编辑器扩展/1.扩展包的安装与结构.html">
+            
+                <a href="../编辑器扩展/1.扩展包的安装与结构.html">
+            
+                    
+                    1.扩展包的安装与结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../编辑器扩展/2.扩展包结构与参数解析.html">
+            
+                <a href="../编辑器扩展/2.扩展包结构与参数解析.html">
+            
+                    
+                    2.扩展包结构与参数解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="../编辑器扩展/3.进程间的通讯.html">
+            
+                <a href="../编辑器扩展/3.进程间的通讯.html">
+            
+                    
+                    3.进程间的通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="../编辑器扩展/4.调用引擎API和项目脚本.html">
+            
+                <a href="../编辑器扩展/4.调用引擎API和项目脚本.html">
+            
+                    
+                    4.调用引擎API和项目脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    网络连接
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="1.短链接.html">
+            
+                <a href="1.短链接.html">
+            
+                    
+                    1.短链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4.2" data-path="2.长连接.html">
+            
+                <a href="2.长连接.html">
+            
+                    
+                    2.长连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="3.下载.html">
+            
+                <a href="3.下载.html">
+            
+                    
+                    3.下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../资源管理/">
+            
+                <a href="../资源管理/">
+            
+                    
+                    资源管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../资源管理/1.资源的加载与释放.html">
+            
+                <a href="../资源管理/1.资源的加载与释放.html">
+            
+                    
+                    1.资源的加载与释放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../资源管理/2.AssetBundle详解.html">
+            
+                <a href="../资源管理/2.AssetBundle详解.html">
+            
+                    
+                    2.AssetBundle详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.3" data-path="../资源管理/3.下载和解析.html">
+            
+                <a href="../资源管理/3.下载和解析.html">
+            
+                    
+                    3.下载和解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.4" data-path="../资源管理/4.缓存管理.html">
+            
+                <a href="../资源管理/4.缓存管理.html">
+            
+                    
+                    4.缓存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../JavaScript学习/">
+            
+                <a href="../../JavaScript学习/">
+            
+                    
+                    JavaScript学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../JavaScript学习/RegExp正则表达式.html">
+            
+                <a href="../../JavaScript学习/RegExp正则表达式.html">
+            
+                    
+                    RegExp正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../JavaScript学习/ES6/">
+            
+                <a href="../../JavaScript学习/ES6/">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../JavaScript学习/ES6/1.let和const.html">
+            
+                <a href="../../JavaScript学习/ES6/1.let和const.html">
+            
+                    
+                    1.let和const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../JavaScript学习/ES6/2.变量的解构赋值.html">
+            
+                <a href="../../JavaScript学习/ES6/2.变量的解构赋值.html">
+            
+                    
+                    2.变量的解构赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../JavaScript学习/ES6/3.字符串扩展.html">
+            
+                <a href="../../JavaScript学习/ES6/3.字符串扩展.html">
+            
+                    
+                    3.字符串扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../../JavaScript学习/ES6/4.数值扩展.html">
+            
+                <a href="../../JavaScript学习/ES6/4.数值扩展.html">
+            
+                    
+                    4.数值扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Markdown使用方法/">
+            
+                <a href="../../Markdown使用方法/">
+            
+                    
+                    Markdown使用方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../Markdown使用方法/Markdown绘图指南/">
+            
+                <a href="../../Markdown使用方法/Markdown绘图指南/">
+            
+                    
+                    Markdown绘图指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../../Markdown使用方法/Markdown绘图指南/Mermaid使用说明.html">
+            
+                <a href="../../Markdown使用方法/Markdown绘图指南/Mermaid使用说明.html">
+            
+                    
+                    Mermaid使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Solitaire项目笔记/">
+            
+                <a href="../../Solitaire项目笔记/">
+            
+                    
+                    Solitaire项目笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../Solitaire项目笔记/项目概况/">
+            
+                <a href="../../Solitaire项目笔记/项目概况/">
+            
+                    
+                    项目概况
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../Solitaire项目笔记/项目概况/1.项目初探/">
+            
+                <a href="../../Solitaire项目笔记/项目概况/1.项目初探/">
+            
+                    
+                    1.项目初探
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1.1" data-path="../../Solitaire项目笔记/项目概况/1.项目初探/1.项目初探.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/1.项目初探/1.项目初探.html">
+            
+                    
+                    1.项目初探
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.2" data-path="../../Solitaire项目笔记/项目概况/1.项目初探/2.preloadScene.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/1.项目初探/2.preloadScene.html">
+            
+                    
+                    2.preloadScene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.3" data-path="../../Solitaire项目笔记/项目概况/1.项目初探/3.HomeScene.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/1.项目初探/3.HomeScene.html">
+            
+                    
+                    3.HomeScene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.4" data-path="../../Solitaire项目笔记/项目概况/1.项目初探/4.PlayScene.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/1.项目初探/4.PlayScene.html">
+            
+                    
+                    4.PlayScene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.5" data-path="../../Solitaire项目笔记/项目概况/1.项目初探/5.mgr目录.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/1.项目初探/5.mgr目录.html">
+            
+                    
+                    5.mgr目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.1.6" data-path="../../Solitaire项目笔记/项目概况/1.项目初探/6.脚本的使用.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/1.项目初探/6.脚本的使用.html">
+            
+                    
+                    6.脚本的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="../../Solitaire项目笔记/项目概况/2.UI绘制/">
+            
+                <a href="../../Solitaire项目笔记/项目概况/2.UI绘制/">
+            
+                    
+                    2.UI绘制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.2.1" data-path="../../Solitaire项目笔记/项目概况/2.UI绘制/1.creator界面的使用.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/2.UI绘制/1.creator界面的使用.html">
+            
+                    
+                    1.creator界面的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2.2" data-path="../../Solitaire项目笔记/项目概况/2.UI绘制/2.基本界面的创建.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/2.UI绘制/2.基本界面的创建.html">
+            
+                    
+                    2.基本界面的创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="../../Solitaire项目笔记/项目概况/3.热更新/">
+            
+                <a href="../../Solitaire项目笔记/项目概况/3.热更新/">
+            
+                    
+                    3.热更新
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.3.1" data-path="../../Solitaire项目笔记/项目概况/3.热更新/1.常见问题.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/3.热更新/1.常见问题.html">
+            
+                    
+                    1.常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3.2" data-path="../../Solitaire项目笔记/项目概况/3.热更新/2.线上项目更新流程.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/3.热更新/2.线上项目更新流程.html">
+            
+                    
+                    2.线上项目更新流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4" data-path="../../Solitaire项目笔记/项目概况/4.骰子活动/">
+            
+                <a href="../../Solitaire项目笔记/项目概况/4.骰子活动/">
+            
+                    
+                    4.骰子活动
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.4.1" data-path="../../Solitaire项目笔记/项目概况/4.骰子活动/1.骰子活动扩展.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/4.骰子活动/1.骰子活动扩展.html">
+            
+                    
+                    1.骰子活动扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4.2" data-path="../../Solitaire项目笔记/项目概况/4.骰子活动/2.骰子活动说明.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/4.骰子活动/2.骰子活动说明.html">
+            
+                    
+                    2.骰子活动说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.5" data-path="../../Solitaire项目笔记/项目概况/5.版本更新/">
+            
+                <a href="../../Solitaire项目笔记/项目概况/5.版本更新/">
+            
+                    
+                    5.版本更新
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.5.1" data-path="../../Solitaire项目笔记/项目概况/5.版本更新/1.版本更新注意事项.html">
+            
+                <a href="../../Solitaire项目笔记/项目概况/5.版本更新/1.版本更新注意事项.html">
+            
+                    
+                    1.版本更新注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../TypeScript学习/">
+            
+                <a href="../../TypeScript学习/">
+            
+                    
+                    TypeScript学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../TypeScript学习/1.基础类型.html">
+            
+                <a href="../../TypeScript学习/1.基础类型.html">
+            
+                    
+                    1.基础类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../TypeScript学习/2.变量声明.html">
+            
+                <a href="../../TypeScript学习/2.变量声明.html">
+            
+                    
+                    2.变量声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../TypeScript学习/3.接口.html">
+            
+                <a href="../../TypeScript学习/3.接口.html">
+            
+                    
+                    3.接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../TypeScript学习/4.类.html">
+            
+                <a href="../../TypeScript学习/4.类.html">
+            
+                    
+                    4.类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../TypeScript学习/5.函数.html">
+            
+                <a href="../../TypeScript学习/5.函数.html">
+            
+                    
+                    5.函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../TypeScript学习/6.枚举.html">
+            
+                <a href="../../TypeScript学习/6.枚举.html">
+            
+                    
+                    6.枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../TypeScript学习/7.泛型.html">
+            
+                <a href="../../TypeScript学习/7.泛型.html">
+            
+                    
+                    7.泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../TypeScript学习/8.类型推断和类型兼容.html">
+            
+                <a href="../../TypeScript学习/8.类型推断和类型兼容.html">
+            
+                    
+                    8.类型推断和类型兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../TypeScript学习/9.高级类型.html">
+            
+                <a href="../../TypeScript学习/9.高级类型.html">
+            
+                    
+                    9.高级类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../TypeScript学习/10.装饰器.html">
+            
+                <a href="../../TypeScript学习/10.装饰器.html">
+            
+                    
+                    10.装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../命令学习/">
+            
+                <a href="../../命令学习/">
+            
+                    
+                    命令学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../命令学习/1.xcode命令.html">
+            
+                <a href="../../命令学习/1.xcode命令.html">
+            
+                    
+                    1.xcode命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2.长连接</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x957F;&#x8FDE;&#x63A5;">&#x957F;&#x8FDE;&#x63A5;</h2>
+<h3 id="websocket">WebSocket</h3>
+<p>CocosCreator&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x3002;  </p>
+<h4 id="&#x7B80;&#x5355;&#x4F7F;&#x7528;">&#x7B80;&#x5355;&#x4F7F;&#x7528;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> ws = <span class="hljs-keyword">new</span> WebSocket(<span class="hljs-string">&quot;ws://echo.websocket.org&quot;</span>);
+ ws.onopen = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Send Text WS was opened.&quot;</span>);
+ };
+ ws.onmessage = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;response text msg: &quot;</span> + event.data);
+ };
+ ws.onerror = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Send Text fired an error&quot;</span>);
+ };
+ ws.onclose = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;WebSocket instance closed.&quot;</span>);
+ };
+
+ setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+     <span class="hljs-keyword">if</span> (ws.readyState === WebSocket.OPEN) {
+         ws.send(<span class="hljs-string">&quot;Hello WebSocket, I&apos;m a text message.&quot;</span>);
+     }
+     <span class="hljs-keyword">else</span> {
+         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;WebSocket instance wasn&apos;t ready...&quot;</span>);
+     }
+ }, <span class="hljs-number">3</span>);
+</code></pre>
+<h4 id="&#x81EA;&#x5DF1;&#x5C01;&#x88C5;&#x7684;&#x5DE5;&#x5177;&#x7C7B;&#x672A;&#x5B8C;&#x6210;&#x7248;&#x672C;&#x540E;&#x7EED;&#x4F18;&#x5316;">&#x81EA;&#x5DF1;&#x5C01;&#x88C5;&#x7684;&#x5DE5;&#x5177;&#x7C7B;(&#x672A;&#x5B8C;&#x6210;&#x7248;&#x672C;,&#x540E;&#x7EED;&#x4F18;&#x5316;)</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> instance = <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&quot;instance&quot;</span>);
+<span class="hljs-keyword">let</span> socket = <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&quot;socket&quot;</span>);
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WebSocketUtils</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+
+    }
+    <span class="hljs-keyword">static</span> getInstance() {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>[instance] == <span class="hljs-literal">null</span>) {
+            <span class="hljs-keyword">this</span>[instance] = <span class="hljs-keyword">new</span> WebSocketUtils();
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>[instance];
+    }
+
+    connect(url) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>[socket] == <span class="hljs-literal">null</span>) {
+            <span class="hljs-keyword">this</span>[socket] = <span class="hljs-keyword">new</span> WebSocket(url);
+            <span class="hljs-keyword">this</span>[socket].binaryType = <span class="hljs-string">&quot;arraybuffer&quot;</span>;
+            <span class="hljs-keyword">this</span>[socket].onopen = <span class="hljs-keyword">this</span>.onOpen.bind(<span class="hljs-keyword">this</span>);
+            <span class="hljs-keyword">this</span>[socket].onmessage = <span class="hljs-keyword">this</span>.onMessage.bind(<span class="hljs-keyword">this</span>);
+            <span class="hljs-keyword">this</span>[socket].onclose = <span class="hljs-keyword">this</span>.onClose.bind(<span class="hljs-keyword">this</span>);
+            <span class="hljs-keyword">this</span>[socket].onerror = <span class="hljs-keyword">this</span>.onError.bind(<span class="hljs-keyword">this</span>);
+
+            <span class="hljs-comment">// this[socket].addEventListener(&apos;open&apos;, function (event) {</span>
+            <span class="hljs-comment">//     console.log(WebSocketUtils.name + &quot; onOpe2&quot;);</span>
+            <span class="hljs-comment">// });</span>
+            <span class="hljs-comment">// this[socket].addEventListener(&apos;open&apos;, function (event) {</span>
+            <span class="hljs-comment">//     console.log(WebSocketUtils.name + &quot; onOpen3&quot;);</span>
+            <span class="hljs-comment">// });</span>
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>.close();
+        }
+    }
+
+    onOpen() {
+        <span class="hljs-built_in">console</span>.log(WebSocketUtils.name + <span class="hljs-string">&quot; onOpen&quot;</span>);
+    }
+
+    onMessage(message) {
+        <span class="hljs-built_in">console</span>.log(WebSocketUtils.name + <span class="hljs-string">&quot; onMessage&quot;</span>, message);
+    }
+
+    onClose() {
+        <span class="hljs-built_in">console</span>.log(WebSocketUtils.name + <span class="hljs-string">&quot; onClose&quot;</span>);
+        <span class="hljs-keyword">this</span>.close();
+    }
+
+    onError(message) {
+        <span class="hljs-built_in">console</span>.log(WebSocketUtils.name + <span class="hljs-string">&quot; OnError&quot;</span>, message);
+        <span class="hljs-keyword">this</span>.close();
+    }
+
+    close() {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>[socket]) {
+            <span class="hljs-keyword">this</span>[socket].close();
+            <span class="hljs-keyword">this</span>[socket] = <span class="hljs-literal">null</span>;
+        }
+    }
+    sendData(message) {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">this</span>[socket].send(message);
+        } <span class="hljs-keyword">catch</span> (error) {
+            <span class="hljs-built_in">console</span>.log(WebSocketUtils.name + <span class="hljs-string">&quot;sendData&quot;</span> + error);
+        }
+    }
+}
+</code></pre>
+<h3 id="socketio">SocketIO</h3>
+<p>cocoscreator &#x4E0D;&#x652F;&#x6301;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x6839;&#x636E;&#x5E73;&#x53F0;&#x81EA;&#x5DF1;&#x6DFB;&#x52A0;</p>
+<p>&#x76EE;&#x524D;&#x672C;&#x4EBA;&#x53EA;&#x5B8C;&#x6210;&#x4E86;js&#x7248;&#x672C;&#xFF0C;&#x5176;&#x4ED6;&#x5E73;&#x53F0;&#x7248;&#x672C;&#x540E;&#x7EED;&#x66F4;&#x65B0;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { Facade } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../Facade&quot;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> SOCKET_ERROR = {
+    SOCKET_ERROR_DISCONNET: <span class="hljs-string">&quot;SOCKET_ERROR_DISCONNET&quot;</span>,<span class="hljs-comment">//&#x8FDE;&#x63A5;&#x65AD;&#x5F00;</span>
+    SOCKET_ERROR_SOCKET_NOT_NULL: <span class="hljs-string">&quot;SOCKET_ERROR_SOCKET_NOT_NULL&quot;</span>,<span class="hljs-comment">//</span>
+};
+<span class="hljs-built_in">Object</span>.freeze(SOCKET_ERROR);
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> SOCKET_EVENT = {
+    SOCKET_EVENT_CONNECT: <span class="hljs-string">&quot;SOCKET_EVENT_CONNECT&quot;</span>,<span class="hljs-comment">//&#x8FDE;&#x63A5;&#x6210;&#x529F;</span>
+    SOCKET_EVENT_DISCONNECT: <span class="hljs-string">&quot;SOCKET_EVENT_DISCONNECT&quot;</span>,<span class="hljs-comment">//&#x8FDE;&#x63A5;&#x65AD;&#x5F00;</span>
+    SOCKET_EVENT_CONNECT_ERROR: <span class="hljs-string">&quot;SOCKET_EVENT_CONNECT_ERROR&quot;</span>,<span class="hljs-comment">//&#x8FDE;&#x63A5;&#x51FA;&#x73B0;&#x9519;&#x8BEF;</span>
+}
+<span class="hljs-built_in">Object</span>.freeze(SOCKET_EVENT);
+
+
+
+<span class="hljs-keyword">let</span> symbolSocket = <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&quot;socket&quot;</span>);
+<span class="hljs-keyword">let</span> instance = <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&quot;instance&quot;</span>);
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SocketIOUtils</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+        <span class="hljs-comment">//socket&#x5B9E;&#x4F8B;</span>
+        <span class="hljs-keyword">this</span>[symbolSocket] = <span class="hljs-literal">null</span>;
+    }
+
+    <span class="hljs-keyword">static</span> getInstance() {
+        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>[instance]) {
+            <span class="hljs-keyword">this</span>[instance] = <span class="hljs-keyword">new</span> SocketIOUtils();
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>[instance];
+    }
+    <span class="hljs-comment">/**
+     * 
+     * @param {String} url &#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;  
+     */</span>
+    connect(url) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>[symbolSocket] == <span class="hljs-literal">null</span>) {
+            <span class="hljs-keyword">this</span>[symbolSocket] = <span class="hljs-built_in">window</span>.io(url, {
+                transports: [<span class="hljs-string">&apos;websocket&apos;</span>],
+                <span class="hljs-string">&apos;force new connection&apos;</span>: <span class="hljs-literal">true</span>,
+            });
+            <span class="hljs-keyword">this</span>[symbolSocket].on(<span class="hljs-string">&quot;connect&quot;</span>, (data) =&gt; {
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;SocketIOUtils  connect : &quot;</span> + data);
+                Facade.getInstance().sendNotify(SOCKET_EVENT.SOCKET_EVENT_CONNECT, data)
+                <span class="hljs-comment">//&#x53D1;&#x9001;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x7684;&#x4E8B;&#x4EF6;</span>
+            });
+            <span class="hljs-keyword">this</span>[symbolSocket].on(<span class="hljs-string">&quot;disconnect&quot;</span>, (data) =&gt; {
+                <span class="hljs-comment">//&#x53D1;&#x9001;&#x8FDE;&#x63A5;&#x5931;&#x8D25;&#x7684;&#x4E8B;&#x4EF6;</span>
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;SocketIOUtils disconnect : &quot;</span> + data);
+                Facade.getInstance().sendNotify(SOCKET_EVENT.SOCKET_EVENT_DISCONNECT, data);
+                <span class="hljs-keyword">this</span>.disConnect();
+            });
+            <span class="hljs-keyword">this</span>[symbolSocket].on(<span class="hljs-string">&quot;connect_error&quot;</span>, (data) =&gt; {
+                <span class="hljs-comment">//&#x53D1;&#x9001;&#x8FDE;&#x63A5;&#x9519;&#x8BEF;&#x7684;&#x4E8B;&#x4EF6;</span>
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;SocketIOUtils  connectError : &quot;</span> + data);
+                Facade.getInstance().sendNotify(SOCKET_EVENT.SOCKET_EVENT_CONNECT_ERROR, data);
+                <span class="hljs-keyword">this</span>.disConnect();
+            });
+
+            <span class="hljs-keyword">this</span>[symbolSocket].on(<span class="hljs-string">&quot;chat message&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">message</span>) </span>{
+                <span class="hljs-comment">//&#x670D;&#x52A1;&#x5668;&#x53D1;&#x6765;&#x6D88;&#x606F;</span>
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;chat message : &quot;</span> + message);
+            });
+        }
+        <span class="hljs-keyword">else</span> {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;disconnect&quot;</span>);
+            <span class="hljs-keyword">this</span>.disConnect();
+        }
+    }
+
+    sendData(data, callback) {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">this</span>[symbolSocket].emit(<span class="hljs-string">&quot;sendMessage&quot;</span>, data, <span class="hljs-keyword">typeof</span> callback === <span class="hljs-string">&quot;function&quot;</span> ? callback : (message) =&gt; {
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;sendData success&quot;</span> + message);
+            });
+        }
+        <span class="hljs-keyword">catch</span> (err) {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;send data error &quot;</span>, err);
+        }
+        <span class="hljs-comment">// if (this[symbolSocket]) {</span>
+
+        <span class="hljs-comment">// }else{</span>
+        <span class="hljs-comment">//     throw error()</span>
+        <span class="hljs-comment">// }</span>
+    }
+    <span class="hljs-comment">/**
+     * &#x65AD;&#x5F00;&#x8FDE;&#x63A5;
+     */</span>
+    disConnect() {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>[symbolSocket]) {
+            <span class="hljs-keyword">this</span>[symbolSocket].close();
+            <span class="hljs-keyword">this</span>[symbolSocket] = <span class="hljs-literal">null</span>;
+        }
+    }
+}
+</code></pre>
+<p><a href="socket.io.js">socket.io.js</a></p>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.短链接.html" class="navigation navigation-prev " aria-label="Previous page: 1.短链接">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.下载.html" class="navigation navigation-next " aria-label="Next page: 3.下载">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.长连接","level":"1.4.4.2","depth":3,"next":{"title":"3.下载","level":"1.4.4.3","depth":3,"path":"CocosCreator学习/网络连接/3.下载.md","ref":"CocosCreator学习/网络连接/3.下载.md","articles":[]},"previous":{"title":"1.短链接","level":"1.4.4.1","depth":3,"path":"CocosCreator学习/网络连接/1.短链接.md","ref":"CocosCreator学习/网络连接/1.短链接.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mermaid-gb3","copy-code-button","chapter-fold","splitter","popup","search-pro","local-video","toc"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"toc":{"addClass":true,"className":"toc"},"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"local-video":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"郭峰","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人笔记","language":"zh-hans","gitbook":"*","description":"个人笔记"},"file":{"path":"CocosCreator学习/网络连接/2.长连接.md","mtime":"2021-04-28T02:39:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-18T07:15:18.516Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

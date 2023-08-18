@@ -1,0 +1,15 @@
+{
+    "note_path":"/Users/bigfish/Desktop/gf/MyGiteeProject/markdown-notes",
+    "summarydirs" : [
+        "Markdown使用方法",
+        "CocosCreator学习",
+        "CocosCreatorMVC框架结构设计",
+        "JavaScript学习", 
+        "命令学习",
+        "AndroidStudio常见问题解决",
+        "TypeScript学习",
+        "Solitaire项目笔记"
+    ],
+    
+    "gh_page_paths":"/Users/bigfish/Desktop/gf/MyGiteeProject/gf530142771.github.io"
+}

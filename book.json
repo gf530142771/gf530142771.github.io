@@ -1,0 +1,23 @@
+{
+    "title": "个人笔记",
+    "author": "郭峰",
+    "description": "个人笔记",
+    "language": "zh-hans",
+    "plugins": [
+        "mermaid-gb3",
+        "copy-code-button",
+        "chapter-fold",
+        "splitter",
+        "popup",
+        "search-pro",
+        "local-video",
+        "toc"
+    ],
+
+    "pluginsConfig": {
+        "toc": {
+            "addClass": true,
+            "className": "toc"
+        }
+    }
+}

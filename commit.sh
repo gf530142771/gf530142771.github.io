@@ -1,5 +1,15 @@
+#!/bin/bash
+
+# 获取脚本所在目录的绝对路径
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+
+# 切换到脚本目录
+cd "$SCRIPT_DIR" || exit
+
+echo "当前目录: $(pwd)"
+
 echo '生成目录'
-python3 ../MyPythonUtils/CreateSummary.py
+book sm
 
 echo '构建gitbook'
 gitbook build
